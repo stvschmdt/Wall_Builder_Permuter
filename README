@@ -1,0 +1,35 @@
+Steve Schmidt
+XRTRADING Coding Challenge
+
+***********
+* Running *
+***********
+
+$ make
+$ ./wall 9 3
+
+//output
+8
+
+*********
+* NOTES *
+*********
+
+The program can be tested for correctness on permutations of width/height up to a range of about 22 10 (on my laptop). Due to some implementation decisions due to timing (finals week) I was not able to most efficiently preserve memory allocations and performed extra looping in some functions.
+
+The goal was to submit a working program with good C program etiquette and to highlight my thought process (more on that below). There were a couple of areas where I would have liked to short circuit some loops or recursively call the counting function sooner with less memory.
+
+
+*******************
+* Thought Process *
+*******************
+
+Quick Overview of problem solving process:
+
+1. Find linear combinations of 2*x + 3*y = width
+2. Represent each linear combination in binary (unique to size)
+3. For each combination, find all unique permutations of the binary representation
+4. Dynamic Programming - build a 2D matrix (symmetric, but created full verse upper diagonal) to perform counting recursively
+5. 2D matrix would contain 0 if not compatible with M(i,j) below, 1 if it was
+6. Spawn recursive calls to table to return +1 at last level of bricks providing a cumulative sum
+7. Spend some time cleaning up unused arrays, commenting, makefile, etc 
