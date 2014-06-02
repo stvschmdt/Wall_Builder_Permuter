@@ -1,5 +1,6 @@
-Steve Schmidt
-XRTRADING Coding Challenge
+Wall Builder
+Program returns the count of number of ways to construct a wall using 2ft and 3ft bricks with no running cracks.
+Default input is 9x3 but argv1 and argv2 can be entered for other variations.
 
 ***********
 * Running *
@@ -15,10 +16,7 @@ $ ./wall 9 3
 * NOTES *
 *********
 
-The program can be tested for correctness on permutations of width/height up to a range of about 22 10 (on my laptop). Due to some implementation decisions due to timing (finals week) I was not able to most efficiently preserve memory allocations and performed extra looping in some functions.
-
-The goal was to submit a working program with good C program etiquette and to highlight my thought process (more on that below). There were a couple of areas where I would have liked to short circuit some loops or recursively call the counting function sooner with less memory.
-
+The program can be tested for correctness on permutations of width/height up to a range of about 22 10.
 
 *******************
 * Thought Process *
