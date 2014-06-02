@@ -30,4 +30,4 @@ Quick Overview of problem solving process:
 4. Dynamic Programming - build a 2D matrix (symmetric, but created full verse upper diagonal) to perform counting recursively
 5. 2D matrix would contain 0 if not compatible with M(i,j) below, 1 if it was
 6. Spawn recursive calls to table to return +1 at last level of bricks providing a cumulative sum
-7. Spend some time cleaning up unused arrays, commenting, makefile, etc 
+
